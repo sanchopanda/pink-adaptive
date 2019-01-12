@@ -33,10 +33,77 @@
     <section class="page-title">
       <h1 class="slogan page-title__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
-    <section class="competition-form">
+    <section class="contest-form-wrap">
+      <h2 class="contest-form-wrap__title title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
+      <form action="" class="contest-form">
+        <fieldset class="contest-form__full-name name-field">
+          <label for="lastname" class="name-field__label text-label">Фамилия:</label>
+          <input type="text" id="lastname" class="name-field__input text-input" placeholder="Укажите фамилию*">
 
+          <label for="name" class="name-field__label text-label">Фамилия:</label>
+          <input type="text" id="name" class="name-field__input text-input" placeholder="Введите ваше имя*">
+
+          <label for="fathersname" class="name-field__label text-label">Фамилия:</label>
+          <input type="text" id="fathersname" class="name-field__input text-input" placeholder="Ну и отчество тоже">
+        </fieldset>
+        <fieldset class="contest-form__travel travel">
+          <legend class="travel__title text-label">Ваши безбашенные достижения в путешествии</legend>
+
+          <label class="travel__label check-label"><input type="check" class="travel__check check-label__check">Сделал селфи с акулой</label>
+
+          <label class="travel__label check-label"><input type="check" class="travel__check check-label__check">Обгорел на пляже</label>
+
+          <label class="travel__label check-label"><input type="check" class="travel__check check-label__check">Видел Чака Норриса</label>
+
+          <label class="travel__label check-label"><input type="check" class="travel__check check-label__check">Накупил сувениров</label>
+
+          <label class="travel__label check-label"><input type="check" class="travel__check check-label__check">Удержал башню</label>
+
+          <label class="travel__label check-label"><input type="check" class="travel__check check-label__check">Разгромил отель</label>
+        </fieldset>
+        <fieldset class="contest-form__contacts contacts-field">
+          <label for="phone" class="contacts-field__label text-label">Номер телефона</label>
+          <input type="text" id="phone" class="contacts-field__input text-input" placeholder="Номер, пожалуйста">
+
+          <label for="email" class="contacts-field__label text-label">Адрес почты</label>
+          <input type="text" id="email" class="contacts-field__input text-input" placeholder="Введите почту*">
+        </fieldset>
+        <fieldset class="contest-form__app travel-app">
+          <legend class="travel-app__title text-label">С каким приложением путешествовали?</legend>
+
+          <label class="travel-app__label radio-label"><input type="radio" class="travel-app__radio radio-label__radio">Pink для iOS</label>
+
+          <label class="travel-app__label radio-label"><input type="radio" class="travel-app__radio radio-label__radio">Pink на  Android</label>
+
+          <label class="travel-app__label radio-label"><input type="radio" class="travel-app__radio radio-label__radio">Windows Phone</label>
+        </fieldset>
+        <fieldset class="contest-form__emotion emotion">
+          <label for="emotion" class="emotion__label text-label">Опишите свои эмоции</label>
+          <textarea type="text" id="emotion" class="emotion__textarea text-input text-input--textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <button type="submit" class="btn-form contest-form__btn">Отправить форму</button>
+      </form>
     </section>
   </main>
+  <footer class="page-footer">
+    <a href="#" class="page-footer__logo-link logo-link">
+      <img src="#" alt="PINK" class="logo page-footer__logo">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link">Твиттер</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">Фейсбук</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">Ютуб</a>
+      </li>
+    </ul>
+    <div class="developer">
+      <span class="developer__text">Разаработано</span>
+    </div>
+  </footer>
 
 </body>
 </html>
