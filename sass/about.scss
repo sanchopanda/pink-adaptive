@@ -1,0 +1,22 @@
+.about {
+  background-color: #fff;
+  text-align: center;
+}
+
+.about__wrapper {
+  padding-top: 80px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  &::after {
+    content: "";
+    display: block;
+    height: 300px;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat bottom center;
+  }
+}
+
+.about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

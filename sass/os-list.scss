@@ -1,0 +1,22 @@
+.os-list {
+  padding: 0;
+  margin: 0;
+  width: 205px;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0px;
+}
+
+.os-list__item {
+  list-style: none;
+  margin-top: auto;
+}
+
+.os-list__item--android {
+  margin-bottom: 2px;
+}
+
+.os-list__item--windows {
+  margin-bottom: 4px;
+}

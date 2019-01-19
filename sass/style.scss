@@ -1,0 +1,43 @@
+@import "normalize.scss";
+@import "btn.scss";
+@import "toggle.scss";
+@import "main-nav.scss";
+@import "app.scss";
+@import "page-header.scss";
+@import "os-list.scss";
+@import "about.scss";
+@import "price.scss";
+@import "reviews.scss";
+@import "price.scss";
+@import "contacts.scss";
+
+
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+
+.bold-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.small-p {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 30px;
+}
+

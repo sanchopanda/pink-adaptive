@@ -1,0 +1,34 @@
+.main-nav__list {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  display: none;
+  list-style: none;
+  text-align: center;
+  height: 0px;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: auto;
+}
+
+.main-nav__item--open {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  height: 70px;
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+
