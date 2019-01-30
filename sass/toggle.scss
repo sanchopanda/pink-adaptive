@@ -18,21 +18,13 @@
   width: 50px;
   background-color: #fff;
   transition: .5s;
-  &::before,
-  &::after {
-    content: "";
-    display: block;
+  &:first-child {
     position: absolute;
-    height: 4px;
-    width: 50px;
-    background-color: #fff;
-    transition: .5s;
-  };
-  &::before {
     top: 0;
     left: 0;
   };
-  &::after {
+  &:last-child {
+    position: absolute;
     bottom: 0;
     left: 0;
   };
@@ -45,27 +37,15 @@
 .toggle--close .toggle__line {
   display: block;
   height: 4px;
-  width: 0px;
+  width: 31px;
   background-color: #fff;
-
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 31px;
-    background-color: #fff;
+  transform: rotate(45deg);
+  &:first-child {
+    transform: translateY(-20px);
+    opacity: 0;
   };
-  &::before {
-    top: 10px;
-    left: -3px;
-    transform: rotate(45deg);
-
-  };
-  &::after {
+  &:last-child {
     bottom: 10px;
-    left: -3px;
     transform: rotate(-45deg);
   };
 }

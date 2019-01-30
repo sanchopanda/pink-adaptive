@@ -1,6 +1,6 @@
 .btn{
   display: block;
-  width: 274px;
+  width: 280px;
   height: 49px;
   border-radius: 30px;
   text-align: center;
@@ -11,3 +11,14 @@
   text-decoration: none;
   color: #ffffff;
 }
+
+.btn:hover
+ {
+  color: #d22856;
+  background-color: #fff;
+}
+
+.btn:active {
+  color: #f2ced5;
+}
+

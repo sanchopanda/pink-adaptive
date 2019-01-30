@@ -1,21 +1,64 @@
 .app {
-  min-height: 270px;
+  text-align: center;
+}
+
+.app__title {
+  display: none;
+  color: #fff;
 }
 
 .app__btn {
   margin: 0 auto;
+  margin-bottom: 29px;
 }
 
 .app__os-list {
   margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .app__description {
+  display: block;
   margin: 0 auto;
   width: 240px;
   font-size: 14px;
   line-height: 24px;
-  font-weight: light;
+  font-weight: 300;
   color: #ffffff;
   text-align: center;
+}
+
+
+@media (min-width: 660px) {
+  .app {
+    width: 300px;
+  }
+
+  .app__title {
+    display: block;
+  }
+
+  .app__btn {
+    width: 300px;
+  }
+
+  .app__description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 960px) {
+  .app {
+    width: 300px;
+  }
+
+  .app__btn {
+    width: 300px;
+    margin-bottom: 60px;
+  }
+
+  .app__os-list {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
 }

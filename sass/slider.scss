@@ -1,0 +1,52 @@
+.slider {
+  position: relative;
+}
+
+.slider__radio {
+  display: none;
+};
+
+.slider__toggles {
+  display: block;
+  text-align: center;
+}
+
+.slider__toggles label {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 11px;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+
+#reviews1:checked ~ .slider__toggles label[for=reviews1],
+#reviews2:checked ~ .slider__toggles label[for=reviews2],
+#reviews3:checked ~ .slider__toggles label[for=reviews3] {
+  background-color: #fff;
+  border: 3px solid #283645;
+};
+
+.slider__item {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  z-index: 0;
+  margin-bottom: 50px;
+  visibility: hidden;
+}
+
+#reviews1:checked + .slider__item,
+#reviews2:checked + .slider__item,
+#reviews3:checked + .slider__item {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+};
+
+

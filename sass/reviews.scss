@@ -1,3 +1,13 @@
 .reviews {
+  padding: 40px 0;
+}
+
+.reviews__item {
+  max-width: 620px;
   text-align: center;
+  margin: 0 auto;
+}
+
+.reviews__toggles {
+  margin: 0 auto;
 }
