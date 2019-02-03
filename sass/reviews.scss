@@ -1,13 +1,19 @@
-.reviews .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: relative;
+.reviews {
+  padding: 40px 0;
 }
 
 
+.reviews__wrapper {
+  max-width: 690px;
+  margin: 0 auto;
+}
 
 .reviews__item {
   text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .reviews__author-name--tablet,
