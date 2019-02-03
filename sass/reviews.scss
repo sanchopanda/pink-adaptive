@@ -1,13 +1,52 @@
-.reviews {
-  padding: 40px 0;
+.reviews .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.reviews__wrapper {
+  margin: 0 auto;
+  max-width: 640px;
 }
 
 .reviews__item {
-  max-width: 620px;
+  max-width: 640px;
   text-align: center;
   margin: 0 auto;
 }
 
+.reviews__author-name--tablet,
+.reviews__author-description{
+  display: none;
+}
+
 .reviews__toggles {
   margin: 0 auto;
+}
+
+
+
+@media (min-width: 660px) {
+  .reviews__author-name--mobile {
+    display: none;
+  }
+
+  .reviews__author-name--tablet,
+  .reviews__author-description{
+    display: block;
+  }
+
+  .reviews__author-name--tablet{
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .reviews .container {
+  padding-top: 142px;
+  background: url('../img/icon-quotes.svg') 50% 60px no-repeat;
+  background-size: 80px 60px;
+  }
+
 }

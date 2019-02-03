@@ -1,9 +1,17 @@
 .price {
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
+
+
+.price__table {
+  width: 300%;
+  transition: .5s;
+}
+
+
 .price__name {
-  width: 280px;
   height: 98px;
   text-align: center;
   background-color: #283645;
@@ -13,8 +21,27 @@
 
 .price__td {
   width: 280px;
-  height: 98px;
+  height: 60px;
   background-color: #fff;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+#price__radio1:checked ~ .slider__toggles label[for=price__radio1],
+#price__radio2:checked ~ .slider__toggles label[for=price__radio2],
+#price__radio3:checked ~ .slider__toggles label[for=price__radio3] {
+  background-color: #fff;
+  border: 3px solid #283645;
+};
+
+#price__radio1:checked ~ .price__table {
+  transform: translateX(0%);
+}
+
+#price__radio2:checked ~ .price__table {
+  transform: translateX(-33.3%);
+}
+
+#price__radio3:checked ~ .price__table {
+  transform: translateX(-66.6%);
 }

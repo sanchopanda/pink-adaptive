@@ -138,66 +138,80 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <div class="container">
-            <input type="radio" name="reviews" id="reviews1" class="slider__radio" checked>
+        <div class="container">
+          <button class="slider__arrow slider__arrow--left"></button>
+          <button class="slider__arrow slider__arrow--right"></button>
+          <div class="reviews__wrapper slider">
+            <input type="radio" name="reviews" id="radio1" class="slider__radio" checked>
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name bold-title">Николай Петров</cite>
+              <cite class="reviews__author-name reviews__author-name--mobile bold-title">Николай Петров</cite>
               <p class="reviews__text small-p">
                 «Это приложение перевернуло мой мир и позволило по-новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
+              <cite class="reviews__author-name reviews__author-name--tablet bold-title">Николай Петров</cite>
+              <p class="small-p reviews__author-description">25 лет, водитель</p>
             </blockquote>
-            <input type="radio" name="reviews" id="reviews2" class="slider__radio">
+            <input type="radio" name="reviews" id="radio2" class="slider__radio">
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name bold-title">Николай Петров</cite>
+              <cite class="reviews__author-name reviews__author-name--mobile bold-title">Николай Петров</cite>
               <p class="reviews__text small-p">
-                «Это приложение перевернуло мой мир и позволило по-новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                «Это приложение перевернуло мой мир и позволило по-новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempora omnis fugiat neque sed ducimus aperiam nulla, expedita quis asperiores exercitationem est, ab temporibus quam blanditiis, quibusdam aliquid. Praesentium, obcaecati.
               </p>
+              <cite class="reviews__author-name reviews__author-name--tablet bold-title">Николай Петров</cite>
+              <p class="small-p reviews__author-description">25 лет, водитель</p>
             </blockquote>
-            <input type="radio" name="reviews" id="reviews3" class="slider__radio">
+            <input type="radio" name="reviews" id="radio3" class="slider__radio">
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name bold-title">Николай Петров</cite>
+              <cite class="reviews__author-name reviews__author-name--mobile bold-title">Николай Петров</cite>
               <p class="reviews__text small-p">
-                «Это приложение перевернуло мой мир и позволило по-новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsum aspernatur aliquam velit, in quisquam! Voluptas amet enim inventore reiciendis recusandae ea minus officia quo doloribus debitis. Consequatur beatae aspernatur alias porro quidem illo ipsum rem perferendis reprehenderit temporibus! Modi nesciunt culpa, nemo accusamus at debitis sed, quasi tempore voluptatem!
               </p>
+              <cite class="reviews__author-name reviews__author-name--tablet bold-title">Николай Петров</cite>
+              <p class="small-p reviews__author-description">25 лет, водитель</p>
             </blockquote>
+
             <div class="reviews__toggles slider__toggles">
-              <label for="reviews1"></label>
-              <label for="reviews2"></label>
-              <label for="reviews3"></label>
+              <label for="radio1"></label>
+              <label for="radio2"></label>
+              <label for="radio3"></label>
             </div>
           </div>
         </div>
       </section>
       <section class="price">
-        <table class="price__table">
-          <tr>
-            <th class="price__name"><span class="bold-title">Стандарт</span><br><span class="slogan">3,99 USD</span></td>
-            <th class="price__name"><span class="bold-title">Стандарт</span><br><span class="slogan">3,99 USD</span></td>
-            <th class="price__name"><span class="bold-title">Стандарт</span><br><span class="slogan">3,99 USD</span></td>
-          </tr>
-          <tr>
-            <td class="price__first-field price__td">Розовый фильтр</td>
-            <td class="price__first-field price__td">Розовый фильтр</td>
-            <td class="price__first-field price__td">Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td class="price__second-field price__td">Смайлики</td>
-            <td class="price__second-field price__td">Смайлики</td>
-            <td class="price__second-field price__td">Смайлики</td>
-          </tr>
-          <tr>
-            <td class="price__third-field price__td">Комментарии</td>
-            <td class="price__third-field price__td">Комментарии</td>
-            <td class="price__third-field price__td">Комментарии</td>
-          </tr>
-        </table>
-        <div class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">1</button>
+        <div class="container">
+          <input type="radio" class="slider__radio" name="price__radio" id="price__radio1">
+          <input type="radio" class="slider__radio" name="price__radio" id="price__radio2" checked>
+          <input type="radio" class="slider__radio" name="price__radio" id="price__radio3">
+          <table class="price__table">
+            <tr>
+              <th class="price__name"><span class="bold-title">Стандарт</span><br><span class="slogan">3,99 USD</span></th>
+              <th class="price__name"><span class="bold-title">Стандарт</span><br><span class="slogan">3,99 USD</span></th>
+              <th class="price__name"><span class="bold-title">Стандарт</span><br><span class="slogan">3,99 USD</span></th>
+            </tr>
+            <tr>
+              <td class="price__first-field price__td">Розовый фильтр</td>
+              <td class="price__first-field price__td">Розовый фильтр</td>
+              <td class="price__first-field price__td">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="price__second-field price__td">Смайлики</td>
+              <td class="price__second-field price__td">Смайлики</td>
+              <td class="price__second-field price__td">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="price__third-field price__td">Комментарии</td>
+              <td class="price__third-field price__td">Комментарии</td>
+              <td class="price__third-field price__td">Комментарии</td>
+            </tr>
+          </table>
+          <div class="price__toggles slider__toggles">
+            <label for="price__radio1"></label>
+            <label for="price__radio2"></label>
+            <label for="price__radio3"></label>
+          </div>
         </div>
+
       </section>
       <section class="contacts">
         <h2 class="slogan contacts__slogan--top">Остались вопросы?</h2>
