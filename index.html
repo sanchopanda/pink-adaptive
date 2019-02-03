@@ -138,12 +138,14 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="container">
+        <div class="slider">
           <button class="slider__arrow slider__arrow--left"></button>
           <button class="slider__arrow slider__arrow--right"></button>
-          <div class="reviews__wrapper slider">
-            <input type="radio" name="reviews" id="radio1" class="slider__radio" checked>
-            <blockquote class="reviews__item slider__item">
+          <input type="radio" name="reviews" id="radio1" class="slider__radio" checked>
+          <input type="radio" name="reviews" id="radio2" class="slider__radio">
+          <input type="radio" name="reviews" id="radio3" class="slider__radio">
+          <div class="reviews__wrapper slider__wrapper">
+            <blockquote class="reviews__item slider__item slider__item1">
               <cite class="reviews__author-name reviews__author-name--mobile bold-title">Николай Петров</cite>
               <p class="reviews__text small-p">
                 «Это приложение перевернуло мой мир и позволило по-новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
@@ -151,8 +153,7 @@
               <cite class="reviews__author-name reviews__author-name--tablet bold-title">Николай Петров</cite>
               <p class="small-p reviews__author-description">25 лет, водитель</p>
             </blockquote>
-            <input type="radio" name="reviews" id="radio2" class="slider__radio">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item slider__item2">
               <cite class="reviews__author-name reviews__author-name--mobile bold-title">Николай Петров</cite>
               <p class="reviews__text small-p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempora omnis fugiat neque sed ducimus aperiam nulla, expedita quis asperiores exercitationem est, ab temporibus quam blanditiis, quibusdam aliquid. Praesentium, obcaecati.
@@ -160,8 +161,7 @@
               <cite class="reviews__author-name reviews__author-name--tablet bold-title">Николай Петров</cite>
               <p class="small-p reviews__author-description">25 лет, водитель</p>
             </blockquote>
-            <input type="radio" name="reviews" id="radio3" class="slider__radio">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item slider__item3">
               <cite class="reviews__author-name reviews__author-name--mobile bold-title">Николай Петров</cite>
               <p class="reviews__text small-p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsum aspernatur aliquam velit, in quisquam! Voluptas amet enim inventore reiciendis recusandae ea minus officia quo doloribus debitis. Consequatur beatae aspernatur alias porro quidem illo ipsum rem perferendis reprehenderit temporibus! Modi nesciunt culpa, nemo accusamus at debitis sed, quasi tempore voluptatem!
@@ -169,13 +169,12 @@
               <cite class="reviews__author-name reviews__author-name--tablet bold-title">Николай Петров</cite>
               <p class="small-p reviews__author-description">25 лет, водитель</p>
             </blockquote>
-
-            <div class="reviews__toggles slider__toggles">
+          </div>
+           <div class="reviews__toggles slider__toggles">
               <label for="radio1"></label>
               <label for="radio2"></label>
               <label for="radio3"></label>
             </div>
-          </div>
         </div>
       </section>
       <section class="price">
