@@ -1,17 +1,59 @@
 .contacts {
   text-align: center;
+  padding-top: 25px;
 }
 
 .contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  width: 100%;
+}
+
+.contacts__item {
+  margin-top: 25px;
 }
 
 .contacts__info {
+  display: inline-block;
   text-decoration: none;
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
   color: #d22856;
+  margin-top: -10px;
 }
+
+@media (min-width: 660px) {
+  .contacts__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    width: 50%;
+  }
+
+  .contacts__item:last-child {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 960px) {
+  .contacts__list {
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: auto;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 1;
+    flex-grow: 0;
+  }
+}
+

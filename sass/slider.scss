@@ -1,5 +1,6 @@
 .slider {
   position: relative;
+  overflow: hidden;
 }
 
 .slider__wrapper {
@@ -15,8 +16,8 @@
 
 .slider__radio {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 50%;
+  bottom: 20px;
   opacity: 0;
   z-index: -9999;
 }

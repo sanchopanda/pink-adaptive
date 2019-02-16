@@ -1,13 +1,23 @@
 .price {
   background-color: #f2f2f2;
   overflow: hidden;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  background-image: url("https://hungryowl.github.io/pink/img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 101% auto;
+  background-size: 101% auto;
+  background-position: 51% 0;
 }
-
-
 
 .price__table {
   width: 300%;
   transition: .5s;
+  margin-bottom: 40px;
+}
+
+.price__toggles label {
+   border: 3px solid #f2f2f2;
 }
 
 
@@ -19,29 +29,137 @@
   line-height: 30px;
 }
 
+.price__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.price__cost {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.price__hit {
+  position: relative;
+  background-color: #283645;
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    content: "ХИТ";
+    display: block;
+    height: 30px;
+    width: 100px;
+    background-color: #d22856;
+    font-size: 16px;
+    line-height: 30px;
+    transform: rotate(-45deg);
+    top: 8px;
+    left: -30px;
+  }
+}
+
 .price__td {
-  width: 280px;
+  position: relative;
   height: 60px;
   background-color: #fff;
   font-size: 14px;
   text-transform: uppercase;
+  padding: 0 20px;
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 15px;
+  }
 }
 
-#price__radio1:checked ~ .slider__toggles label[for=price__radio1],
-#price__radio2:checked ~ .slider__toggles label[for=price__radio2],
-#price__radio3:checked ~ .slider__toggles label[for=price__radio3] {
-  background-color: #fff;
-  border: 3px solid #283645;
-};
-
-#price__radio1:checked ~ .price__table {
-  transform: translateX(0%);
+.price__td--no::after {
+  background:url('../img/icon-no.svg') center center no-repeat;
 }
 
-#price__radio2:checked ~ .price__table {
-  transform: translateX(-33.3%);
+.price__td--yes::after {
+  background:url('../img/icon-yes.svg') center center no-repeat;
+  background-size: 100% 100%;
 }
 
-#price__radio3:checked ~ .price__table {
-  transform: translateX(-66.6%);
+.price__td--hidden::after {
+  display: none;
+}
+
+
+
+@media (max-width: 659px) {
+  .price__name--hidden {
+    display: none;
+  }
+
+  .price__td--hidden {
+   display: none;
+  }
+
+  #price__radio1:checked ~ .slider__toggles label[for=price__radio1],
+  #price__radio2:checked ~ .slider__toggles label[for=price__radio2],
+  #price__radio3:checked ~ .slider__toggles label[for=price__radio3] {
+    background-color: #fff;
+    border: 3px solid #283645;
+  };
+
+  #price__radio1:checked ~ .price__table {
+    transform: translateX(0%);
+  }
+
+  #price__radio2:checked ~ .price__table {
+    transform: translateX(-33.3%);
+  }
+
+  #price__radio3:checked ~ .price__table {
+    transform: translateX(-66.6%);
+   }
+}
+
+
+@media (min-width: 660px) {
+  .price__table {
+    width: 100%;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+  .price__name {
+    height: 80px;
+  }
+
+  .price__name--hidden {
+    background-color: transparent;
+    min-width: 183px;
+  }
+
+  .price__title {
+    font-size: 16px;
+  }
+
+  .price__cost {
+    font-size: 18px;
+  }
+
+  .price__td span {
+    display: none;
+  }
+
+  .price__td {
+    width: 25%;
+    vertical-align: middle;
+    &::after {
+    position: static;
+    margin: 0 auto;
+    }
+  }
+
 }

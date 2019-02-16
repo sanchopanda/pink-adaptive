@@ -6,6 +6,7 @@ $desktop: 960px;
 @import "logo.scss";
 @import "btn.scss";
 @import "toggle.scss";
+@import "slider.scss";
 @import "main-nav.scss";
 @import "os-list.scss";
 @import "app.scss";
@@ -15,7 +16,9 @@ $desktop: 960px;
 @import "reviews.scss";
 @import "price.scss";
 @import "contacts.scss";
-@import "slider.scss";
+@import "map.scss";
+@import "page-footer.scss";
+
 
 body {
   font-family: 'Open Sans', 'Arial', sans-serif;
