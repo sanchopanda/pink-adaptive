@@ -1,8 +1,48 @@
+.page-footer {
+  padding: 40px 0;
+}
+
 .page-footer .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 200px;
+  justify-content: space-between;
 }
 
-.logo:hover patch{
-  fill: black;
+.page-footer__author {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: space-between;
+  font-size: 18px;
+  cursor: pointer;
+  &:hover .page-footer__htmlacademy {
+    fill: black;
+  }
+  &:active .page-footer__htmlacademy {
+    opacity: 0.3;
+  }
 }
+
+.page-footer__author a {
+  height: 34px;
+}
+
+.page-footer__htmlacademy {
+  fill: #d22856;
+}
+
+
+@media (min-width: 660px) {
+  .page-footer .container {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .page-footer__logo-link {
+    margin-top: -12px;
+  }
+}
+
+

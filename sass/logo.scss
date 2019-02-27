@@ -1,33 +1,67 @@
 .logo {
+  display: inline-block;
+  height: 41px;
+  width: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo__stars,
+.logo__dot {
   display: none;
 }
 
-.logo:hover path {
+
+.logo__picture--header {
   fill: #d22856;
+  color: #ffffff;
 }
 
-.logo:active path {
+.logo__picture--header:hover {
+  color: #d22856;
+}
+
+.logo__picture--header:active {
+  color: #ffffff;
   opacity: 0.3;
 }
 
+.logo__picture--footer {
+  color: #d22856;
+}
 
+.logo__picture--footer:hover {
+  fill: #d22856;
+}
 
-
+.logo__picture--footer:active {
+  fill: #000000;
+  opacity: 0.3;
+}
 
 @media (max-width: 659px) {
-  .logo--mobile {
-    display: block;
+  .logo {
+    width: 77px;
+    height: 24px;
+  }
+
+  .logo__picture {
+    position: absolute;
+    top: -17px;
+    left: -72px;
   }
 }
 
-@media (min-width: 660px) and (max-width: 959px) {
-  .logo--tablet {
-    display: block;
-  }
-}
 
 @media (min-width: 960px) {
-  .logo--desktop {
+  .logo__stars,
+  .logo__dot {
     display: block;
   }
 }
+
+
+
+
+
+

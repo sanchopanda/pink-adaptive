@@ -95,11 +95,13 @@
   .slider__arrow {
     display: block;
     position: absolute;
+    z-index: 5;
     top: 180px;
     width: 23px;
     height: 42px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
   }
 
   .slider__arrow--left {
