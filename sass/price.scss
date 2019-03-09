@@ -62,30 +62,17 @@
 }
 
 .price__td {
-  position: relative;
   height: 60px;
   background-color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0 20px;
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    right: 20px;
-    top: 15px;
-  }
+  text-align: center;
 }
 
-.price__td--no::after {
-  background:url('../img/icon-no.svg') center center no-repeat;
-}
-
-.price__td--yes::after {
-  background:url('../img/icon-yes.svg') center center no-repeat;
-  background-size: 100% 100%;
+.price__td svg {
+  color: #f25b26;
+  fill: #3dc644;
 }
 
 .price__td--hidden::after {
@@ -120,6 +107,13 @@
 
   #price__radio3:checked ~ .price__table {
     transform: translateX(-66.6%);
+   }
+
+   .price__td svg {
+    float: right;
+   }
+   .price__td span {
+    float: left;
    }
 }
 
