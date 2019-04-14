@@ -1,20 +1,30 @@
 .DS_Store
 
+
 .idea
 
-*.ai
+*
+.ai
 
-*.log
+*
+.log
 
-*.pdf
+*
+.pdf
 
-*.psd
+*
+.psd
 
-*.sublime
-*.css
+*
+.sublime
+*
+.css
 node_modules/
-npm-debug.
+npm-debug
+.
 *
 Thumbs
 .db
 
+
+/build
