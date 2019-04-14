@@ -6,7 +6,7 @@
 
 .about__wrapper {
   background-color: #f2f2f2;
-  background-image: url("https://hungryowl.github.io/pink/img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   -webkit-background-size: 101% auto;
   background-size: 101% auto;
@@ -32,6 +32,13 @@
     display: block;
     height: 300px;
     background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 25px;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .about__item:last-child::after {
+      background: url("../img/iphone-screen-mobile@2x.png") no-repeat center 25px;
+      background-size: auto 320px;
+    }
   }
 }
 
@@ -76,6 +83,14 @@
     overflow: visible;
   }
 
+  @media (min-resolution: 1.5dppx) {
+    .about__wrapper .container::before {
+      background: url("../img/iphone-screen-3-tablet@2x.png") no-repeat;
+      background-size: auto 481px;
+      background-position: left bottom;
+    }
+  }
+
   .about__item {
     width: 310px;
   }
@@ -111,5 +126,22 @@
 
   .about__item:nth-child(3) {
     background: url('../img/iphone-screen-3-desktop@1x.png') center top no-repeat;
+  }
+
+   @media (min-resolution: 1.5dppx) {
+    .about__item:nth-child(1) {
+    background: url('../img/iphone-screen-1-desktop@2x.png') center top no-repeat;
+     background-size: auto 302px;
+  }
+
+  .about__item:nth-child(2) {
+    background: url('../img/iphone-screen-2-desktop@2x.png') center top no-repeat;
+     background-size: auto 302px;
+  }
+
+  .about__item:nth-child(3) {
+    background: url('../img/iphone-screen-3-desktop@2x.png') center top no-repeat;
+     background-size: auto 302px;
+  }
   }
 }

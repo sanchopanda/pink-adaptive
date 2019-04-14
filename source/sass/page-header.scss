@@ -3,6 +3,14 @@
   background-position: center bottom 270px, center bottom 270px;
 }
 
+@media (min-resolution: 1.5dppx) {
+  .page-header {
+    background: url("../img/iphone-hand-mobile@2x.png") no-repeat, url("../img/bg-back-mobile@2x.jpg") no-repeat;
+     background-size: auto 284px, auto 462px;
+     background-position: center bottom 270px, center bottom 270px;
+  }
+}
+
 .page-header__head {
   background-color: rgba(29, 38, 49, 0.6);
   min-height: 70px;
@@ -45,11 +53,26 @@
   background-position: center bottom -235px;
 }
 
+@media (min-resolution: 1.5dppx) {
+  .page-header--form {
+     background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
+     background-size: auto 462px;
+     background-position: center bottom -235px;
+  }
+}
+
 
 @media (min-width: 660px) {
   .page-header{
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat bottom;
   }
+
+  @media (min-resolution: 1.5dppx) {
+  .page-header {
+    background: url("../img/iphone-hand-tablet@2x.png") no-repeat bottom, url("../img/bg-back-tablet@2x.jpg") no-repeat bottom;
+     background-size: auto 545px, auto 729px;
+  }
+}
 
   .page-header__head {
     min-height: 110px;
@@ -79,6 +102,14 @@
    background-position: center bottom -315px;
  }
 
+ @media (min-resolution: 1.5dppx) {
+  .page-header--form {
+    background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
+    background-position: center bottom -315px;
+    background-size: auto 729px;
+  }
+}
+
   .page-header--form .title {
     width: 480px;
     padding: 60px 0;
@@ -89,6 +120,12 @@
   .page-header {
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop@1x.jpg") no-repeat bottom;
   }
+  @media (min-resolution: 1.5dppx) {
+  .page-header {
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom,url("../img/bg-back-desktop@2x.jpg") no-repeat bottom;
+    background-size: auto 645px, auto 853px;
+  }
+}
 
   .page-header__head .container {
     display: flex;
@@ -103,6 +140,14 @@
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
    background-position: center bottom -315px;
  }
+
+ @media (min-resolution: 1.5dppx) {
+  .page-header--form {
+    background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
+    background-position: center bottom -315px;
+    background-size: auto 853px;
+  }
+}
 
   .page-header--form .title {
     width: 750px;

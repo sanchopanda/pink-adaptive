@@ -13,9 +13,7 @@ var csso = require('gulp-csso');
 var posthtml = require('gulp-posthtml');
 var include = require("posthtml-include");
 var imagemin = require("gulp-imagemin");
-var imageminW = require('imagemin');
-var webp =  require("imagemin-webp");
-var extReplace = require("gulp-ext-replace");
+
 
 
 gulp.task("clean", function() {
@@ -85,7 +83,7 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]).on("change", server.reload);
   gulp.watch("source/*.html", ["html"]);
   gulp.watch("build/*.html").on("change", server.reload);
 });
