@@ -19,8 +19,7 @@
   height: 0px;
   margin-left: -20px;
   margin-right: -20px;
-  background-color: rgba(29, 38, 49, 1);;
-  animation: close-nav 0.5s;
+  background-color: rgba(29, 38, 49, 1);
 }
 
 .main-nav__link {
@@ -47,6 +46,10 @@
 }
 
 @media (max-width: 959px) {
+  .main-nav__item {
+    animation: close-nav 0.5s;
+  }
+
   .main-nav__list--open .main-nav__item {
     display: flex;
     list-style: none;

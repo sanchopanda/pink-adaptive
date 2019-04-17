@@ -94,7 +94,9 @@ gulp.task("serve", ["style"], function() {
 gulp.task("build", function(done) {
   run(
     "clean",
-    "copy"
+    "copy",
+    "html",
+    "style"
   );
 });
 
