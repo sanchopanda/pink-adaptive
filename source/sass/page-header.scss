@@ -1,14 +1,39 @@
-.page-header {
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat, url("../img/bg-back-mobile@1x.jpg") no-repeat;
+.no-webp .page-header,
+.no-js .page-header  {
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat, url("../img/bg-back-mobile@1x.jpg") no-repeat; 
+  }
+
+.webp .page-header {
+  background: url("../img/iphone-hand-mobile@1x.webp") no-repeat, url("../img/bg-back-mobile@1x.webp") no-repeat;
+}
+
+.no-webp .page-header,
+.no-js .page-header,
+.webp .page-header { 
   background-position: center bottom 270px, center bottom 270px;
 }
 
+
+
 @media (min-resolution: 1.5dppx) {
-  .page-header {
-    background: url("../img/iphone-hand-mobile@2x.png") no-repeat, url("../img/bg-back-mobile@2x.jpg") no-repeat;
-     background-size: auto 284px, auto 462px;
-     background-position: center bottom 270px, center bottom 270px;
+
+  .no-webp .page-header,
+.no-js .page-header  {
+  background: url("../img/iphone-hand-mobile@2x.png") no-repeat, url("../img/bg-back-mobile@2x.jpg") no-repeat;  
   }
+
+.webp .page-header {
+  background: url("../img/iphone-hand-mobile@2x.webp") no-repeat, url("../img/bg-back-mobile@2x.webp") no-repeat;
+}
+
+.no-webp .page-header,
+.no-js .page-header,
+.webp .page-header { 
+  background-size: auto 284px, auto 462px;
+  background-position: center bottom 270px, center bottom 270px;
+}
+
+  
 }
 
 .page-header__head {
@@ -48,30 +73,79 @@
   background-color: #1d2631;
 }
 
-.page-header--form {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+
+.no-webp .page-header--form,
+.no-js .page-header--form  {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;  
+  }
+
+.webp .page-header--form {
+  background: url("../img/bg-back-mobile@1x.webp") no-repeat;
+}
+
+.no-webp .page-header--form,
+.no-js .page-header--form,
+.webp .page-header--form { 
   background-position: center bottom -235px;
 }
 
+
+
 @media (min-resolution: 1.5dppx) {
-  .page-header--form {
-     background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
-     background-size: auto 462px;
-     background-position: center bottom -235px;
+
+  .no-webp .page-header--form,
+.no-js .page-header--form  {
+  background: url("../img/bg-back-mobile@2x.jpg") no-repeat;  
   }
+
+.webp .page-header--form {
+  background: url("../img/bg-back-mobile@2x.webp") no-repeat;
+}
+
+.no-webp .page-header--form,
+.no-js .page-header--form,
+.webp .page-header--form { 
+  background-size: auto 462px;
+     background-position: center bottom -235px;
+    }
+ 
 }
 
 
 @media (min-width: 660px) {
-  .page-header{
+
+  .no-webp .page-header,
+  .no-js .page-header  {
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat bottom;  
+    }
+  
+  .webp .page-header {
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat bottom;
-  }
+  } 
+ 
+
+  
+
+ 
 
   @media (min-resolution: 1.5dppx) {
-  .page-header {
-    background: url("../img/iphone-hand-tablet@2x.png") no-repeat bottom, url("../img/bg-back-tablet@2x.jpg") no-repeat bottom;
-     background-size: auto 545px, auto 729px;
-  }
+
+    .no-webp .page-header,
+    .no-js .page-header  {
+      background: url("../img/iphone-hand-tablet@2x.png") no-repeat bottom, url("../img/bg-back-tablet@2x.jpg") no-repeat bottom; 
+      }
+    
+    .webp .page-header {
+      background: url("../img/iphone-hand-tablet@2x.webp") no-repeat bottom, url("../img/bg-back-tablet@2x.webp") no-repeat bottom;
+    }
+    
+    .no-webp .page-header,
+    .no-js .page-header,
+    .webp .page-header { 
+      background-size: auto 545px, auto 729px;
+        }
+
+ 
 }
 
   .page-header__head {
@@ -97,17 +171,40 @@
     margin-top: 44px;
   }
 
-  .page-header--form {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-   background-position: center bottom -315px;
- }
+
+  .no-webp .page-header--form,
+  .no-js .page-header--form  {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat; 
+    }
+  
+  .webp .page-header--form {
+    background: url("../img/bg-back-tablet@1x.webp") no-repeat;
+  }
+  
+  .no-webp .page-header--form,
+  .no-js .page-header--form,
+  .webp .page-header--form { 
+    background-position: center bottom -315px;
+  }
+
 
  @media (min-resolution: 1.5dppx) {
-  .page-header--form {
-    background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
+
+  .no-webp .page-header--form,
+  .no-js .page-header--form  {
+    background: url("../img/bg-back-tablet@2x.jpg") no-repeat; 
+    }
+  
+  .webp .page-header--form {
+    background: url("../img/bg-back-tablet@2x.webp") no-repeat;
+  }
+  
+  .no-webp .page-header--form,
+  .no-js .page-header--form,
+  .webp .page-header--form { 
     background-position: center bottom -315px;
     background-size: auto 729px;
-  }
+  }  
 }
 
   .page-header--form .title {
@@ -117,14 +214,33 @@
 }
 
 @media (min-width: 960px) {
-  .page-header {
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop@1x.jpg") no-repeat bottom;
+
+  .no-webp .page-header,
+.no-js .page-header  {
+  background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom, url("../img/bg-back-desktop@1x.jpg") no-repeat bottom;
   }
+
+.webp .page-header {
+  background: url("../img/iphone-hand-desktop@1x.webp") no-repeat bottom, url("../img/bg-back-desktop@1x.webp") no-repeat bottom;
+}
+
+
   @media (min-resolution: 1.5dppx) {
-  .page-header {
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom,url("../img/bg-back-desktop@2x.jpg") no-repeat bottom;
-    background-size: auto 645px, auto 853px;
-  }
+
+    .no-webp .page-header,
+    .no-js .page-header  {
+      background: url("../img/iphone-hand-desktop@1x.png") no-repeat bottom,url("../img/bg-back-desktop@2x.jpg") no-repeat bottom; 
+      }
+    
+    .webp .page-header {
+      background: url("../img/iphone-hand-desktop@1x.webp") no-repeat bottom,url("../img/bg-back-desktop@2x.webp") no-repeat bottom;
+    }
+    
+    .no-webp .page-header,
+    .no-js .page-header,
+    .webp .page-header { 
+      background-size: auto 645px, auto 853px;
+        } 
 }
 
   .page-header__head .container {
@@ -136,18 +252,40 @@
     display: none;
   }
 
-  .page-header--form {
+  .no-webp .page-header--form,
+  .no-js .page-header--form  {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
-   background-position: center bottom -315px;
- }
+    }
+  
+  .webp .page-header--form {
+    background: url("../img/bg-back-desktop@1x.webp") no-repeat;
+  }
+  
+  .no-webp .page-header--form,
+  .no-js .page-header--form,
+  .webp .page-header--form { 
+    background-position: center bottom -315px;
+  }  
+} 
 
  @media (min-resolution: 1.5dppx) {
-  .page-header--form {
+
+  .no-webp .page-header--form,
+  .no-js .page-header--form  {
     background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
+  }
+  
+  .webp .page-header--form {
+    background: url("../img/bg-back-desktop@2x.webp") no-repeat;
+  }
+  
+  .no-webp .page-header--form,
+  .no-js .page-header--form,
+  .webp .page-header--form { 
     background-position: center bottom -315px;
     background-size: auto 853px;
-  }
-}
+  }    
+
 
   .page-header--form .title {
     width: 750px;
