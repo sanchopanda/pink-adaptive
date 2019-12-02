@@ -225,6 +225,11 @@
 }
 
 
+.page-header--form .title {
+  width: 750px;
+  padding: 90px 0;
+}
+
   @media (min-resolution: 1.5dppx) {
 
     .no-webp .page-header,
@@ -254,24 +259,6 @@
 
   .no-webp .page-header--form,
   .no-js .page-header--form  {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
-    }
-  
-  .webp .page-header--form {
-    background: url("../img/bg-back-desktop@1x.webp") no-repeat;
-  }
-  
-  .no-webp .page-header--form,
-  .no-js .page-header--form,
-  .webp .page-header--form { 
-    background-position: center bottom -315px;
-  }  
-} 
-
- @media (min-resolution: 1.5dppx) {
-
-  .no-webp .page-header--form,
-  .no-js .page-header--form  {
     background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
   }
   
@@ -286,9 +273,6 @@
     background-size: auto 853px;
   }    
 
+} 
 
-  .page-header--form .title {
-    width: 750px;
-    padding: 90px 0;
-  }
-}
+ 
