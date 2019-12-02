@@ -1,38 +1,36 @@
 .map {
-  position: relative;
+    position: relative;
+    background-color: #f3efe3;
 }
 
 .triangle {
-  display: block;
-  position: absolute;
-  top: -1px;
-  left: 0;
-  height: 50px;
-  width: 100%;
-  z-index: 1;
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
 }
 
 #map {
-  height: 200px;
+    height: 200px;
 }
 
 @media (min-width: 660px) {
-  #map{
-    height: 380px
-  }
-
-  .triangle {
-    height: 75px;
-  }
+    #map {
+        height: 380px
+    }
+    .triangle {
+        height: 75px;
+    }
 }
 
 @media (min-width: 960px) {
-  #map{
-    height: 500px
-  }
-
-  .triangle {
-    height: 110px;
-  }
+    #map {
+        height: 500px
+    }
+    .triangle {
+        height: 110px;
+    }
 }
-
