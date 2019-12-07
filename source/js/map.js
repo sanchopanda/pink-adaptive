@@ -18,11 +18,7 @@ function init () {
     }, {
 
       iconLayout: 'default#image',
-
-      iconImageHref: '../img/icon-map-marker.svg',
-      // Label size
-      iconImageSize: [37, 37],
-      // Icon's upper left edge offset to its "leg" (binding point)
+      
 
     });
 
